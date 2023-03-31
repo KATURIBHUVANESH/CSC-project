@@ -1,0 +1,33 @@
+The process of converting audio to text is known as speech to text. Audio files are nearly impossible to use for visualization/analysis or to extract meaningful data from computer software and programs. As a result, these audio files must be converted to text before they can be used for data analysis and harvesting. Although speech to text appears to be a simple task in today's technological world, it requires many linguistic models and algorithms to achieve near-perfect accuracy. In this article, I'll go over AWS Transcribe, a speech-to-text service offered by Amazon Web Services.
+
+About the Services involved in this Project in detail:
+1.Amazon S3:
+Amazon S3 is an object storage service that provides industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can store and protect virtually any amount of data for use cases such as data lakes, cloud-native applications, and mobile apps. You can optimise costs, organise data, and configure fine-tuned access controls to meet specific business, organisational, and compliance requirements with cost-effective storage classes and simple management features.
+
+2.AWS Transcribe:
+Amazon Transcribe is an automatic speech recognition service that converts audio to text using machine learning models. Amazon Transcribe can be used as a standalone transcription service or to add speech-to-text functionality to any application.
+You can improve accuracy for your specific use case by customising the language, filter content to ensure customer privacy or audience-appropriate language, analyse content in multi-channel audio, partition the speech of individual speakers, and more with Amazon Transcribe.
+
+Step by Step Procedure: 
+
+1.Login to your AWS Management Console and Open Amazon S3 console. Click on Create Bucket option.
+
+2.Give a unique bucket name since s3 has global namespace. Dont change any other options .Continue will Default options and simply click on create bucket.
+
+3.Once the bucket is created .Click on upload option and upload a mp3 type file which is in your local system.
+
+4. Now, go to Bucket  properties tab. There you need to Copy the S3 URL which you created for this project .
+
+5.In new tab, Open the Amazon Transcribe console. 
+
+6.Click on Create a transcript and then click on Create a Job. Specify the job name as you want and all other options leave default. 
+
+7.Under input data option. Browse your s3 bucket where you uploaded the mp3 file or you can paste the S3 URL here  which you have  copied previously. Then click next. After that choose on create job.
+
+8. Once the job is created successfully. You can see there all the details about your job.
+
+9.Here  in the Transcription Preview Tab you can see your output text of the mp3 file which you have uploaded in the S3 bucket.
+
+10. This is about How the application Integration goes like API Request and API response in detail.
+
+Conclusion: In this way, I completed the speech to text conversion project. This is the output procedure to be followed. I hope you all understand how these services interact to produce the desired result.
